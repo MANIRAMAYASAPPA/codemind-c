@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int n,sq,rem,sum=0;
+    int n,d,s=0,e;
     scanf("%d",&n);
-    sq=n*n;
-    while(sq!=0)
+    d=n*n;
+    while(d>0)
     {
-        rem=sq%10;
-        sum=sum+rem;
-        sq=sq/10;
+        e=d%10;
+        d=d/10;
+        s=s+e;
     }
-    if(sum==n)
+    if(s==n)
     {
         printf("Neon Number");
     }
     else
     {
-        printf("Not Neon Number");
+     printf("Not Neon Number");   
     }
 }
