@@ -11,16 +11,16 @@ int main()
         scanf("%d",&n);
         a=pre_prime(n);
         b=nex_prime(n);
-       if((n-a)<=(b-n))
-       {
-           printf("%d
+        if((n-a)<=(b-n))
+        {
+            printf("%d
 ",a);
-       }
-       else
-       {
-           printf("%d
+        }
+        else
+        {
+            printf("%d
 ",b);
-       }
+        }
     }
 }
 int is_prime(int m)
@@ -51,3 +51,4 @@ int nex_prime(int n)
     }
     return n;
 }
+
